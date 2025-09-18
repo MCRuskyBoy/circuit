@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+
 /*
-bool ADD (bool A, bool B) {
+bool AND (bool A, bool B) {
 	bool C;
 	if ((A == true) && (B == true))
 		C = true;
@@ -10,7 +11,15 @@ bool ADD (bool A, bool B) {
 		C = false;
 	return C;
 }
+
+bool OR (bool A, bool B) {}
+
+bool XOR (bool A, bool B) {}
+
+bool NOT (bool A) {}
 */
+
+
 int bto (bool A) {
 	if (A == true)
 		printf("C = true\n");
@@ -42,7 +51,7 @@ int main() {
 	bool A = true;
 	bool B = true;
 	
-	bto(ADD(A, B));
+	bto(AND(A, B));
 	*/
 	return 0;
 }
