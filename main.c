@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 
-/*
+
 bool AND (bool A, bool B) {
 	bool C;
 	if ((A == true) && (B == true))
@@ -12,23 +12,50 @@ bool AND (bool A, bool B) {
 	return C;
 }
 
-bool OR (bool A, bool B) {}
 
-bool XOR (bool A, bool B) {}
+bool OR (bool A, bool B) {
+	bool C;
+	if ((A == true) | (B == true))
+		C = true;
+	else
+		C = false;
+	return C;
+}
 
-bool NOT (bool A) {}
-*/
+
+bool XOR (bool A, bool B) {
+	bool C;
+	if ((A == false) && (B == true))
+		C = true;
+	else if ((A == true) && (B == false))
+		C = true;
+	else
+		C = false;
+	return C;
+}
+
+
+bool NOT (bool A) {
+	bool C;
+	if (A == 0)
+		C = 1;
+	else if (A == 1)
+		C = 0;
+	return C;
+}
+
 
 
 int bto (bool A) {
 	if (A == true)
-		printf("C = true\n");
+		printf("true");
 	else
-		printf("C = false\n");
+		printf("false");
 	return 0;
 }
 
 
+/*
 bool atb () {
 	int i;
 	bool A;
@@ -39,13 +66,24 @@ bool atb () {
 	else if (i == 1)
 		A = true;
 	else 
-		break
+		A = false;
 	return A;
 }
+*/
+
 
 int main() {
+	bool A = false, B = false;
+	//bool A = false, B = true;
+	//bool A = true, B = false;
+	//bool A = true, B = true;
 
-	bto(atb());
+	printf("A[%d] B[%d]\tC[%d] AND\n", A, B, AND(A, B));
+	printf("A[%d] B[%d]\tC[%d] OR\n", A, B, OR(A, B));
+	printf("A[%d] B[%d]\tC[%d] XOR\n", A, B, XOR(A, B));
+	printf("A[%d]\t\tC[%d] NOT\n", A, NOT(A));
+
+	//bto(AND(A, B));
 
 	/*
 	bool A = true;
