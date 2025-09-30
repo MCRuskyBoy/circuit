@@ -1,6 +1,6 @@
 # circuit
 
-implemented in CircuitVerse:
+implemented in CircuitVerse(https://circuitverse.org/simulator):
 - ADD 8bit
 ![image](https://github.com/MCRuskyBoy/circuit/blob/main/pictures/ADD-8bit.jpeg)
 - SUB 8bit
