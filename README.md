@@ -1,7 +1,7 @@
 # circuit
 
 implemented in CircuitVerse:
-## ADD
+# ADD
 https://github.com/MCRuskyBoy/circuit/blob/main/pictures/ADD-8bit.jpeg
 goals to implement:
   - Logic Gates:
