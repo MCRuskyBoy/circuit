@@ -45,6 +45,10 @@ bool NOT (bool A) {
 }
 
 
+bool BUF (bool A) {
+	bool C = A;
+	return C;
+}
 
 int bto (bool A) {
 	if (A == true)
@@ -72,25 +76,40 @@ bool atb () {
 */
 
 
+bool halfADD (bool A, bool B, bool Cin) {
+	bool step1D = AND(A, B);
+	bool S = XOR(step1D, Cin);
+	/*
+	bool step2D1 = AND(Cin, step1D);
+	bool step2D2 = AND(A, B);
+	bool Cout = OR(step2D1, step2D2);
+	*/
+	return S;
+}
+
+
+
 int main() {
-	bool A = false, B = false;
+	//bool A = false, B = false;
 	//bool A = false, B = true;
-	//bool A = true, B = false;
+	bool A = true, B = false;
 	//bool A = true, B = true;
+
+
+	bool Cin = false
+
+
 
 	printf("A[%d] B[%d]\tC[%d] AND\n", A, B, AND(A, B));
 	printf("A[%d] B[%d]\tC[%d] OR\n", A, B, OR(A, B));
 	printf("A[%d] B[%d]\tC[%d] XOR\n", A, B, XOR(A, B));
 	printf("A[%d]\t\tC[%d] NOT\n", A, NOT(A));
+	printf("A[%d]\t\tC[%d] BUF\n", A, BUF(A));
 
-	//bto(AND(A, B));
 
-	/*
-	bool A = true;
-	bool B = true;
-	
-	bto(AND(A, B));
-	*/
+	printf("A[%d] B[%d] Cin[%d] 1bit ADD S[%d]\n", A, B, Cin, halfADD(A, B, Cin));
+
+
 	return 0;
 }
 
