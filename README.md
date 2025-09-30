@@ -11,12 +11,13 @@ implemented in [CircuitVerse](https://circuitverse.org/simulator):
 
 
 goals to implement:
-  - Logic Gates:
+
+- in CircuitVerse
+  - DIV
+
+- in Code
+  - Logic Gates
     - AND
     - OR
     - XOR
     - NOT
-  - ADD
-  - SUB
-  - MUL
-  - DIV
