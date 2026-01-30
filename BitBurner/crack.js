@@ -1,6 +1,6 @@
 /** @param {NS} ns */
 export async function main(ns) {
-
+  // https://raw.githubusercontent.com/MCRuskyBoy/circuit/refs/heads/main/BitBurner/crack.js
   const hostname = ns.getHostname();
 
 
